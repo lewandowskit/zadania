@@ -1,0 +1,274 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body{
+    font-family: "Roboto";
+    background: #F0F0F0;
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+
+.bg-white{
+    background: #ffffff;
+
+}
+
+.bg-img{
+    background-image: url("../images/1400.jpg");
+    height: 408px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    background: #FFFFFF;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .title{
+        font-size: 42px;
+        max-width: 450px;
+        text-align: left;
+    
+    }
+    .text-box{
+        max-width: 450px;
+        font: normal normal 300 16px/26px Roboto;
+        text-align: left;
+    }
+    
+    .button{
+        padding-left: 17rem;
+        margin-top: 15px;
+    }
+
+    .btn-custom{
+
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 3.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #E4C1AE;
+        border-color: #E4C1AE;
+        width: 135px;
+        height: 47px;
+    }
+    .btn-primary:hover {
+        color: #000000;
+        background-color: #E4C1AE;
+        border-color: #E4C1AE;
+    }
+
+}
+
+/* REPONSIVE */
+@media (min-width: 1025px) and (max-width: 1280px) { 
+    .bg-img {
+        background-image: url("../images/1394.jpg");
+        height: 408px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content {
+        background: #FFFFFF;
+        height: 407px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .bg-img{
+        background-image: url("../images/1394.jpg");
+        height: 408px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content {
+        background: #FFFFFF;
+        height: 407px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bg-img{
+        background-image: url("../images/480.jpg");
+        height: 408px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content{
+        background: #FFFFFF;
+        height: 407px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .title{
+            font-size: 42px;
+            max-width: 450px;
+            text-align: left;
+    
+        }
+        .text-box{
+            max-width: 450px;
+            font: normal normal 300 16px/26px Roboto;
+            text-align: left;
+        }
+        .button{
+            padding-left: 12rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .bg-img{
+        background-image: url("../images/480.jpg");
+        height: 408px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content{
+        background: #FFFFFF;
+        height: 407px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .title{
+            font-size: 42px;
+            max-width: 450px;
+            text-align: center;
+    
+        }
+        .text-box{
+            max-width: 450px;
+            font: normal normal 300 16px/26px Roboto;
+            text-align: center;
+        }
+        .button{
+            padding-left: 0rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .bg-img{
+        background-image: url("../images/480.jpg");
+        height: 408px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        background: #FFFFFF;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            font-size: 42px;
+            max-width: 450px;
+            text-align: left;
+    
+        }
+        .text-box{
+            max-width: 450px;
+            font: normal normal 300 16px/26px Roboto;
+            text-align: left;
+        }
+        .button{
+            padding-left: 0rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }   
+}
